@@ -11,23 +11,31 @@ use Symfony\Component\Routing\Annotation\Route;
 class BookController extends AbstractController
 {
     /**
-     * @Route("/booklist", name="book")
+     * @Route("/book/list", name="book_list")
      *
      * Je passe en parametre la classe "EntityManagerInterface" avec la variable
      * $entityManager, pour que Symfony mette dans la variable une instance de la
      * classe
      */
-    public function index(EntityManagerInterface $entityManager)
+    public function bookList(BookRepository $bookRepository)
     {
-
-    	// j'utilise l'instance de la classe entity Manager, pour récupérer
-	    // le répository des Book.
-	    // j'ai besoin du repository pour faire des requetes SELECT dans la table
-	    $bookRepository = $entityManager->getRepository(Book::class);
 
 	    // j'utilise la méthode findAll du repository pour récupérer tous mes Book
 	    $books = $bookRepository->findAll();
 
 	    dump($books); die;
+    }
+
+	/**
+	 * @Route("/book/show", name="book_show")
+	 */
+    public function bookShow(BookRepository $bookRepository)
+    {
+    	// j'utilise la méthode find du BookRepository afin
+	    // de récupérer un livre dans la table Book en fonction
+	    // de son id
+	    $book = $bookRepository->find(3);
+
+	    dump($book); die;
     }
 }

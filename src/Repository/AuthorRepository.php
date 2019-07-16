@@ -19,32 +19,37 @@ class AuthorRepository extends ServiceEntityRepository
         parent::__construct($registry, Author::class);
     }
 
-    // /**
-    //  * @return Author[] Returns an array of Author objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Author
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
+    // méthode pour trouver des auteurs en fonction d'un mot de leur biographie
+
+
+	// afficher la variable
+
+	public function getAuthorsByBio()
+	{
+
+		// LIGNE A MODIFIER, VALEUR A RECUPERER DEPUIS L'URL (DONC A TRAITER DANS LE CONTROLEUR)
+		$word = 'david';
+
+		// je récupère le query builder, qui me permet de créer des
+		// requetes SQL
+		$qb = $this->createQueryBuilder('a');
+
+		// je sélectionne tous les auteurs de la base de données
+		$query = $qb->select('a')
+
+			// si le 'word' est trouvé dans la biographie
+			->where('a.biography LIKE :word')
+
+			// j'utilise le setParameter pour sécuriser la requete
+			->setParameter('word', '%'.$word.'%')
+
+			// je créé la requete SQL
+			->getQuery();
+
+		// je récupère les résultats sous forme d'array
+		$resultats = $query->getArrayResult();
+
+		return $resultats;
+	}
 }

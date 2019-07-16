@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Book;
+use App\Repository\AuthorRepository;
 use App\Repository\BookRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -47,8 +48,18 @@ class BookController extends AbstractController
     {
     	$books = $bookRepository->findByGenre();
 
-    	var_dump($books); die;e
+    	var_dump($books); die;
     }
 
+
+	/**
+	 * @Route("/authors/bio", name="authors_bio")
+	 */
+    public function authorsByBiography(AuthorRepository $authorRepository)
+    {
+	    $authors = $authorRepository->getAuthorsByBio();
+
+	    var_dump($authors); die;
+    }
 
 }

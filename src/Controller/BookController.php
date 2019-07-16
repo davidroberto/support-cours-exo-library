@@ -38,4 +38,17 @@ class BookController extends AbstractController
 
 	    dump($book); die;
     }
+
+
+	/**
+	 * @Route("/book/style", name="book_style")
+	 */
+    public function booksByStyle(BookRepository $bookRepository)
+    {
+    	$books = $bookRepository->findByGenre();
+
+    	var_dump($books); die;e
+    }
+
+
 }

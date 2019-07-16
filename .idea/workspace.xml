@@ -4,6 +4,7 @@
     <list default="true" id="c211b555-ba48-4757-88c3-e0d4cec22cae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/BookController.php" afterPath="$PROJECT_DIR$/src/Controller/BookController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/BookRepository.php" afterPath="$PROJECT_DIR$/src/Repository/BookRepository.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,19 +31,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BookController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
+      <file leaf-file-name="BookRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Repository/BookRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-              <folding>
-                <element signature="e#34#54#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="107">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>findAll</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +57,7 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Entity/Author.php" />
         <option value="$PROJECT_DIR$/src/Entity/Book.php" />
+        <option value="$PROJECT_DIR$/src/Repository/BookRepository.php" />
         <option value="$PROJECT_DIR$/src/Controller/BookController.php" />
       </list>
     </option>
@@ -176,8 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,6 +281,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,12 +313,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563180304645</updated>
-      <workItem from="1563180308855" duration="7087000" />
+      <workItem from="1563180308855" duration="7346000" />
+      <workItem from="1563271666779" duration="2175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7087000" />
+    <option name="totallyTimeSpent" value="9521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,25 +331,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13828126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -358,11 +364,20 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="465">
+          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <marker date="1563276913000" expanded="true" signature="38:244" ph="..." />
+            <marker date="1563276913000" expanded="true" signature="293:1302" ph="{...}" />
+            <marker date="1563276913000" expanded="true" signature="303:539" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
+            <marker date="1563276913000" expanded="true" signature="602:762" ph="{...}" />
+            <marker date="1563276913000" expanded="true" signature="768:814" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
+            <marker date="1563276913000" expanded="true" signature="877:1088" ph="{...}" />
+            <marker date="1563276913000" expanded="true" signature="1095:1143" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
+            <marker date="1563276913000" expanded="true" signature="1210:1298" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -370,25 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <marker date="1563180881000" expanded="true" signature="0:2259" ph="{&quot;type&quot;: &quot;project&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="70:1008" ph="{&quot;php&quot;: &quot;^7.1.3&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1029:1229" ph="{&quot;symfony/debug-pack&quot;: &quot;*&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1245:1348" ph="{&quot;sort-packages&quot;: true...}" />
-            <marker date="1563180881000" expanded="true" signature="1276:1311" ph="{&quot;*&quot;: &quot;dist&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1366:1430" ph="{...}" />
-            <marker date="1563180881000" expanded="true" signature="1385:1424" ph="{&quot;App\&quot;: &quot;src/&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1452:1525" ph="{...}" />
-            <marker date="1563180881000" expanded="true" signature="1471:1519" ph="{&quot;App\Tests\&quot;: &quot;tests/&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1542:1785" ph="{&quot;paragonie/random_compat&quot;: &quot;2.*&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1802:2081" ph="{...}" />
-            <marker date="1563180881000" expanded="true" signature="1828:1938" ph="{&quot;cache:clear&quot;: &quot;symfony-cmd&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="1968:2007" ph="[...]" />
-            <marker date="1563180881000" expanded="true" signature="2036:2075" ph="[...]" />
-            <marker date="1563180881000" expanded="true" signature="2099:2137" ph="{&quot;symfony/symfony&quot;: &quot;*&quot;...}" />
-            <marker date="1563180881000" expanded="true" signature="2152:2257" ph="{...}" />
-            <marker date="1563180881000" expanded="true" signature="2173:2251" ph="{&quot;allow-contrib&quot;: false...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,7 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -404,7 +399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -412,7 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -420,60 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Author.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <marker date="1563191485000" expanded="true" signature="67:135" ph=" @ORM\Entity(repositoryClass=&quot;App\Repository\AuthorRepository&quot;) ..." />
-            <marker date="1563191485000" expanded="true" signature="150:1903" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="160:247" ph=" @ORM\Id() ..." />
-            <marker date="1563191485000" expanded="true" signature="275:327" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
-            <marker date="1563191485000" expanded="true" signature="357:409" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
-            <marker date="1563191485000" expanded="true" signature="444:486" ph=" @ORM\Column(type=&quot;datetime&quot;) ..." />
-            <marker date="1563191485000" expanded="true" signature="521:578" ph=" @ORM\Column(type=&quot;datetime&quot;, nullable=true) ..." />
-            <marker date="1563191485000" expanded="true" signature="613:666" ph=" @ORM\Column(type=&quot;text&quot;, nullable=true) ..." />
-            <marker date="1563191485000" expanded="true" signature="728:766" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="806:846" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="895:959" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1004:1049" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1108:1182" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1239:1284" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1355:1429" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1486:1531" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1603:1677" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1722:1767" ph="{...}" />
-            <marker date="1563191485000" expanded="true" signature="1827:1901" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Book.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <marker date="1563192021000" expanded="true" signature="67:133" ph=" @ORM\Entity(repositoryClass=&quot;App\Repository\BookRepository&quot;) ..." />
-            <marker date="1563192021000" expanded="true" signature="146:1494" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="156:243" ph=" @ORM\Id() ..." />
-            <marker date="1563192021000" expanded="true" signature="271:323" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
-            <marker date="1563192021000" expanded="true" signature="354:406" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
-            <marker date="1563192021000" expanded="true" signature="437:493" ph=" @ORM\Column(type=&quot;integer&quot;, nullable=true) ..." />
-            <marker date="1563192021000" expanded="true" signature="526:579" ph=" @ORM\Column(type=&quot;text&quot;, nullable=true) ..." />
-            <marker date="1563192021000" expanded="true" signature="638:676" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="717:758" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="809:875" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="916:957" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="1008:1074" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="1114:1157" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="1210:1280" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="1323:1366" ph="{...}" />
-            <marker date="1563192021000" expanded="true" signature="1422:1492" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,28 +456,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/BookRepository.php">
+    <entry file="file://$PROJECT_DIR$/../movies-rest/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="169">
+          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
           <folding>
-            <marker date="1563191546000" expanded="false" signature="38:172" ph="..." />
-            <marker date="1563191546000" expanded="true" signature="177:450" ph=" @method Book|null find($id, $lockMode = null, $lockVersion = null) ..." />
-            <marker date="1563191546000" expanded="true" signature="505:1342" ph="{...}" />
-            <marker date="1563191546000" expanded="true" signature="568:633" ph="{...}" />
-            <marker date="1563191546000" expanded="true" signature="721:1051" ph="..." />
-            <marker date="1563191546000" expanded="true" signature="1061:1338" ph="..." />
+            <marker date="1531428433000" expanded="false" signature="8:985" ph="..." />
+            <marker date="1531428433000" expanded="false" signature="1018:1238" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="1243:1774" ph=" An EntityRepository serves as a repository for entities with generic as well as ..." />
+            <marker date="1531428433000" expanded="true" signature="1839:9722" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="1849:1874" ph=" @var string ..." />
+            <marker date="1531428433000" expanded="true" signature="1913:1945" ph=" @var EntityManager ..." />
+            <marker date="1531428433000" expanded="true" signature="1976:2030" ph=" @var \Doctrine\ORM\Mapping\ClassMetadata ..." />
+            <marker date="1531428433000" expanded="true" signature="2064:2263" ph=" Initializes a new &lt;tt&gt;EntityRepository&lt;/tt&gt;. ..." />
+            <marker date="1531428433000" expanded="true" signature="2355:2481" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="2490:2706" ph=" Creates a new QueryBuilder instance that is prepopulated for this entity name. ..." />
+            <marker date="1531428433000" expanded="true" signature="2772:2919" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="2848:2854" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="2875:2911" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="2928:3137" ph=" Creates a new result set mapping builder for this entity. ..." />
+            <marker date="1531428433000" expanded="true" signature="3197:3413" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="3422:3575" ph=" Creates a new Query instance based on a predefined metadata named query. ..." />
+            <marker date="1531428433000" expanded="true" signature="3626:3720" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="3729:3843" ph=" Creates a native SQL query. ..." />
+            <marker date="1531428433000" expanded="true" signature="3900:4208" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="4217:4329" ph=" Clears the repository, causing all managed entities to become detached. ..." />
+            <marker date="1531428433000" expanded="true" signature="4359:4429" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="4438:4930" ph=" Finds an entity by its primary key / identifier. ..." />
+            <marker date="1531428433000" expanded="true" signature="5001:5096" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="5105:5198" ph=" Finds all entities in the repository. ..." />
+            <marker date="1531428433000" expanded="true" signature="5230:5276" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="5285:5517" ph=" Finds entities by a set of criteria. ..." />
+            <marker date="1531428433000" expanded="true" signature="5617:5794" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="5803:6030" ph=" Finds a single entity by a set of criteria. ..." />
+            <marker date="1531428433000" expanded="true" signature="6102:6284" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="6293:6563" ph=" Counts entities by a set of criteria. ..." />
+            <marker date="1531428433000" expanded="true" signature="6608:6722" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="6731:7028" ph=" Adds support for magic method calls. ..." />
+            <marker date="1531428433000" expanded="true" signature="7078:7709" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="7131:7226" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="7278:7376" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="7426:7520" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="7718:7746" ph=" @return string ..." />
+            <marker date="1531428433000" expanded="true" signature="7787:7834" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="7843:7871" ph=" @return string ..." />
+            <marker date="1531428433000" expanded="true" signature="7908:7959" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="7968:8003" ph=" @return EntityManager ..." />
+            <marker date="1531428433000" expanded="true" signature="8047:8086" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="8095:8138" ph=" @return Mapping\ClassMetadata ..." />
+            <marker date="1531428433000" expanded="true" signature="8182:8224" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="8233:8503" ph=" Select all elements from a selectable that match the expression and ..." />
+            <marker date="1531428433000" expanded="true" signature="8554:8723" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="8732:9167" ph=" Resolves a magic method call to the proper existent method at `EntityRepository`. ..." />
+            <marker date="1531428433000" expanded="true" signature="9239:9720" ph="{...}" />
+            <marker date="1531428433000" expanded="true" signature="9273:9354" ph="..." />
+            <marker date="1531428433000" expanded="true" signature="9513:9619" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-bundle/Repository/ServiceEntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <marker date="1559633705000" expanded="false" signature="65:164" ph="..." />
+            <marker date="1559633705000" expanded="true" signature="169:585" ph=" Optional EntityRepository base class with a simplified constructor (for autowiring). ..." />
+            <marker date="1559633705000" expanded="true" signature="686:1324" ph="{...}" />
+            <marker date="1559633705000" expanded="true" signature="696:789" ph=" @param string $entityClass The class name of the entity this repository manages ..." />
+            <marker date="1559633705000" expanded="true" signature="864:1322" ph="{...}" />
+            <marker date="1559633705000" expanded="true" signature="968:1233" ph="..." />
+            <marker date="1559633705000" expanded="true" signature="1014:1221" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="27" />
+          <folding>
+            <marker date="1542757606000" expanded="false" signature="8:985" ph="..." />
+            <marker date="1542757606000" expanded="false" signature="1018:1238" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="1243:1774" ph=" An EntityRepository serves as a repository for entities with generic as well as ..." />
+            <marker date="1542757606000" expanded="true" signature="1839:9722" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="1849:1874" ph=" @var string ..." />
+            <marker date="1542757606000" expanded="true" signature="1913:1945" ph=" @var EntityManager ..." />
+            <marker date="1542757606000" expanded="true" signature="1976:2030" ph=" @var \Doctrine\ORM\Mapping\ClassMetadata ..." />
+            <marker date="1542757606000" expanded="true" signature="2064:2263" ph=" Initializes a new &lt;tt&gt;EntityRepository&lt;/tt&gt;. ..." />
+            <marker date="1542757606000" expanded="true" signature="2355:2481" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="2490:2706" ph=" Creates a new QueryBuilder instance that is prepopulated for this entity name. ..." />
+            <marker date="1542757606000" expanded="true" signature="2772:2919" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="2848:2854" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="2875:2911" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="2928:3137" ph=" Creates a new result set mapping builder for this entity. ..." />
+            <marker date="1542757606000" expanded="true" signature="3197:3413" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="3422:3575" ph=" Creates a new Query instance based on a predefined metadata named query. ..." />
+            <marker date="1542757606000" expanded="true" signature="3626:3720" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="3729:3843" ph=" Creates a native SQL query. ..." />
+            <marker date="1542757606000" expanded="true" signature="3900:4208" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="4217:4329" ph=" Clears the repository, causing all managed entities to become detached. ..." />
+            <marker date="1542757606000" expanded="true" signature="4359:4429" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="4438:4930" ph=" Finds an entity by its primary key / identifier. ..." />
+            <marker date="1542757606000" expanded="true" signature="5001:5096" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="5105:5198" ph=" Finds all entities in the repository. ..." />
+            <marker date="1542757606000" expanded="true" signature="5230:5276" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="5285:5517" ph=" Finds entities by a set of criteria. ..." />
+            <marker date="1542757606000" expanded="true" signature="5617:5794" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="5803:6030" ph=" Finds a single entity by a set of criteria. ..." />
+            <marker date="1542757606000" expanded="true" signature="6102:6284" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="6293:6563" ph=" Counts entities by a set of criteria. ..." />
+            <marker date="1542757606000" expanded="true" signature="6608:6722" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="6731:7028" ph=" Adds support for magic method calls. ..." />
+            <marker date="1542757606000" expanded="true" signature="7078:7709" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="7131:7226" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="7278:7376" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="7426:7520" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="7718:7746" ph=" @return string ..." />
+            <marker date="1542757606000" expanded="true" signature="7787:7834" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="7843:7871" ph=" @return string ..." />
+            <marker date="1542757606000" expanded="true" signature="7908:7959" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="7968:8003" ph=" @return EntityManager ..." />
+            <marker date="1542757606000" expanded="true" signature="8047:8086" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="8095:8138" ph=" @return Mapping\ClassMetadata ..." />
+            <marker date="1542757606000" expanded="true" signature="8182:8224" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="8233:8503" ph=" Select all elements from a selectable that match the expression and ..." />
+            <marker date="1542757606000" expanded="true" signature="8554:8723" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="8732:9167" ph=" Resolves a magic method call to the proper existent method at `EntityRepository`. ..." />
+            <marker date="1542757606000" expanded="true" signature="9239:9720" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="9273:9354" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="9513:9619" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <marker date="1563192021000" expanded="true" signature="67:133" ph=" @ORM\Entity(repositoryClass=&quot;App\Repository\BookRepository&quot;) ..." />
+            <marker date="1563192021000" expanded="true" signature="146:1494" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="156:243" ph=" @ORM\Id() ..." />
+            <marker date="1563192021000" expanded="true" signature="271:323" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
+            <marker date="1563192021000" expanded="true" signature="354:406" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
+            <marker date="1563192021000" expanded="true" signature="437:493" ph=" @ORM\Column(type=&quot;integer&quot;, nullable=true) ..." />
+            <marker date="1563192021000" expanded="true" signature="526:579" ph=" @ORM\Column(type=&quot;text&quot;, nullable=true) ..." />
+            <marker date="1563192021000" expanded="true" signature="638:676" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="717:758" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="809:875" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="916:957" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="1008:1074" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="1114:1157" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="1210:1280" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="1323:1366" ph="{...}" />
+            <marker date="1563192021000" expanded="true" signature="1422:1492" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <marker date="1563191485000" expanded="true" signature="67:135" ph=" @ORM\Entity(repositoryClass=&quot;App\Repository\AuthorRepository&quot;) ..." />
+            <marker date="1563191485000" expanded="true" signature="150:1903" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="160:247" ph=" @ORM\Id() ..." />
+            <marker date="1563191485000" expanded="true" signature="275:327" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
+            <marker date="1563191485000" expanded="true" signature="357:409" ph=" @ORM\Column(type=&quot;string&quot;, length=255) ..." />
+            <marker date="1563191485000" expanded="true" signature="444:486" ph=" @ORM\Column(type=&quot;datetime&quot;) ..." />
+            <marker date="1563191485000" expanded="true" signature="521:578" ph=" @ORM\Column(type=&quot;datetime&quot;, nullable=true) ..." />
+            <marker date="1563191485000" expanded="true" signature="613:666" ph=" @ORM\Column(type=&quot;text&quot;, nullable=true) ..." />
+            <marker date="1563191485000" expanded="true" signature="728:766" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="806:846" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="895:959" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1004:1049" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1108:1182" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1239:1284" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1355:1429" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1486:1531" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1603:1677" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1722:1767" ph="{...}" />
+            <marker date="1563191485000" expanded="true" signature="1827:1901" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="518">
+          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
           <folding>
-            <element signature="e#34#54#0#PHP" expanded="true" />
+            <marker date="1563276913000" expanded="true" signature="38:244" ph="..." />
+            <marker date="1563276913000" expanded="true" signature="293:1302" ph="{...}" />
+            <marker date="1563276913000" expanded="true" signature="303:539" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
+            <marker date="1563276913000" expanded="true" signature="602:762" ph="{...}" />
+            <marker date="1563276913000" expanded="true" signature="768:814" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
+            <marker date="1563276913000" expanded="true" signature="877:1088" ph="{...}" />
+            <marker date="1563276913000" expanded="true" signature="1095:1143" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
+            <marker date="1563276913000" expanded="true" signature="1210:1298" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/BookRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

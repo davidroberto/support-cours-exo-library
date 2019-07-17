@@ -21,15 +21,9 @@ class AuthorRepository extends ServiceEntityRepository
 
 
     // méthode pour trouver des auteurs en fonction d'un mot de leur biographie
-
-
-	// afficher la variable
-
-	public function getAuthorsByBio()
+	// prend en parametre la chaine de caractère envoyée depuis le controleur (qui appelle cette méthode)
+	public function getAuthorsByBio($word)
 	{
-
-		// LIGNE A MODIFIER, VALEUR A RECUPERER DEPUIS L'URL (DONC A TRAITER DANS LE CONTROLEUR)
-		$word = 'david';
 
 		// je récupère le query builder, qui me permet de créer des
 		// requetes SQL

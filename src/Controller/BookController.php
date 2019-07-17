@@ -2,10 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\Book;
-use App\Repository\AuthorRepository;
 use App\Repository\BookRepository;
-use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -46,20 +43,13 @@ class BookController extends AbstractController
 	 */
     public function booksByStyle(BookRepository $bookRepository)
     {
+	    // j'appelle la méthode findByGenre() que j'ai créée dans le repository Author pour afficher des livres en fonction de leur genre
+	    // le genre est défini en "dur" dans le repository
+	    // ATTENTION IL EXISTE PAR DEFAUT UNE METHODE FINDBY() QUI PERMET DE FAIRE LA MEME CHOSE
     	$books = $bookRepository->findByGenre();
 
     	var_dump($books); die;
     }
 
-
-	/**
-	 * @Route("/authors/bio", name="authors_bio")
-	 */
-    public function authorsByBiography(AuthorRepository $authorRepository)
-    {
-	    $authors = $authorRepository->getAuthorsByBio();
-
-	    var_dump($authors); die;
-    }
 
 }

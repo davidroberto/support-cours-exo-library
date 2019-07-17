@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c211b555-ba48-4757-88c3-e0d4cec22cae" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/BookController.php" afterPath="$PROJECT_DIR$/src/Controller/BookController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/AuthorRepository.php" afterPath="$PROJECT_DIR$/src/Repository/AuthorRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repository/BookRepository.php" afterPath="$PROJECT_DIR$/src/Repository/BookRepository.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="AuthorRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Repository/AuthorRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+            <state relative-caret-position="311">
+              <caret line="23" column="105" lean-forward="false" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -58,6 +58,7 @@
         <option value="$PROJECT_DIR$/src/Entity/Author.php" />
         <option value="$PROJECT_DIR$/src/Entity/Book.php" />
         <option value="$PROJECT_DIR$/src/Repository/BookRepository.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AuthorController.php" />
         <option value="$PROJECT_DIR$/src/Controller/BookController.php" />
         <option value="$PROJECT_DIR$/src/Repository/AuthorRepository.php" />
       </list>
@@ -162,7 +163,6 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
@@ -183,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,6 +193,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,7 +299,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,12 +330,13 @@
       <option name="presentableId" value="Default" />
       <updated>1563180304645</updated>
       <workItem from="1563180308855" duration="7346000" />
-      <workItem from="1563271666779" duration="5560000" />
+      <workItem from="1563271666779" duration="7143000" />
+      <workItem from="1563349257221" duration="569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12906000" />
+    <option name="totallyTimeSpent" value="15058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +348,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1280" height="732" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13828126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -368,19 +383,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding>
+            <marker date="1563354661000" expanded="true" signature="38:182" ph="..." />
+            <marker date="1563354661000" expanded="true" signature="231:1524" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="241:477" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="540:700" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="706:752" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="815:1026" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="1033:1081" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="1148:1520" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
           <folding>
-            <marker date="1563285127000" expanded="true" signature="38:281" ph="..." />
-            <marker date="1563285127000" expanded="true" signature="330:1568" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="340:576" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="639:799" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="805:851" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="914:1125" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="1132:1180" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="1247:1334" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="1341:1391" ph=" @Route(&quot;/authors/bio&quot;, name=&quot;authors_bio&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="1468:1565" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="38:182" ph="..." />
+            <marker date="1563354661000" expanded="true" signature="231:1524" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="241:477" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="540:700" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="706:752" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="815:1026" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="1033:1081" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="1148:1520" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -424,39 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <marker date="1542757606000" expanded="false" signature="8:985" ph="..." />
-            <marker date="1542757606000" expanded="false" signature="1018:1101" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="1106:1263" ph=" EntityManager interface ..." />
-            <marker date="1542757606000" expanded="true" signature="1320:8762" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="1330:1493" ph=" Returns the cache API for managing the second level cache regions or NULL if the cache is not enabled. ..." />
-            <marker date="1542757606000" expanded="true" signature="1536:1660" ph=" Gets the database connection object used by the EntityManager. ..." />
-            <marker date="1542757606000" expanded="true" signature="1708:2132" ph=" Gets an ExpressionBuilder used for object-oriented construction of query expressions. ..." />
-            <marker date="1542757606000" expanded="true" signature="2187:2287" ph=" Starts a transaction on the underlying database connection. ..." />
-            <marker date="1542757606000" expanded="true" signature="2338:2918" ph=" Executes a function in a transaction. ..." />
-            <marker date="1542757606000" expanded="true" signature="2971:3072" ph=" Commits a transaction on the underlying database connection. ..." />
-            <marker date="1542757606000" expanded="true" signature="3113:3212" ph=" Performs a rollback on the underlying database connection. ..." />
-            <marker date="1542757606000" expanded="true" signature="3255:3373" ph=" Creates a new Query object. ..." />
-            <marker date="1542757606000" expanded="true" signature="3428:3539" ph=" Creates a Query from a named query. ..." />
-            <marker date="1542757606000" expanded="true" signature="3595:3778" ph=" Creates a native SQL query. ..." />
-            <marker date="1542757606000" expanded="true" signature="3857:3987" ph=" Creates a NativeQuery from a named native query. ..." />
-            <marker date="1542757606000" expanded="true" signature="4049:4128" ph=" Create a QueryBuilder instance ..." />
-            <marker date="1542757606000" expanded="true" signature="4181:4554" ph=" Gets a reference to the entity identified by the given type and identifier ..." />
-            <marker date="1542757606000" expanded="true" signature="4617:5691" ph=" Gets a partial reference to the entity identified by the given type and identifier ..." />
-            <marker date="1542757606000" expanded="true" signature="5769:5988" ph=" Closes the EntityManager. All entities that are currently managed ..." />
-            <marker date="1542757606000" expanded="true" signature="6028:6340" ph=" Creates a copy of the given entity. Can create a shallow or a deep copy. ..." />
-            <marker date="1542757606000" expanded="true" signature="6401:6670" ph=" Acquire a lock on the given entity. ..." />
-            <marker date="1542757606000" expanded="true" signature="6748:6862" ph=" Gets the EventManager used by the EntityManager. ..." />
-            <marker date="1542757606000" expanded="true" signature="6912:7011" ph=" Gets the Configuration used by the EntityManager. ..." />
-            <marker date="1542757606000" expanded="true" signature="7062:7149" ph=" Check if the Entity manager is open or closed. ..." />
-            <marker date="1542757606000" expanded="true" signature="7190:7308" ph=" Gets the UnitOfWork used by the EntityManager to coordinate operations. ..." />
-            <marker date="1542757606000" expanded="true" signature="7356:7690" ph=" Gets a hydrator for the given hydration mode. ..." />
-            <marker date="1542757606000" expanded="true" signature="7750:7969" ph=" Create a new instance for the given hydration mode. ..." />
-            <marker date="1542757606000" expanded="true" signature="8029:8172" ph=" Gets the proxy factory used by the EntityManager to create entity proxies. ..." />
-            <marker date="1542757606000" expanded="true" signature="8222:8350" ph=" Gets the enabled filters. ..." />
-            <marker date="1542757606000" expanded="true" signature="8395:8539" ph=" Checks whether the state of the filter collection is clean. ..." />
-            <marker date="1542757606000" expanded="true" signature="8593:8724" ph=" Checks whether the Entity Manager has filters. ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,58 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding>
-            <marker date="1531428433000" expanded="false" signature="8:985" ph="..." />
-            <marker date="1531428433000" expanded="false" signature="1018:1238" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="1243:1774" ph=" An EntityRepository serves as a repository for entities with generic as well as ..." />
-            <marker date="1531428433000" expanded="true" signature="1839:9722" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="1849:1874" ph=" @var string ..." />
-            <marker date="1531428433000" expanded="true" signature="1913:1945" ph=" @var EntityManager ..." />
-            <marker date="1531428433000" expanded="true" signature="1976:2030" ph=" @var \Doctrine\ORM\Mapping\ClassMetadata ..." />
-            <marker date="1531428433000" expanded="true" signature="2064:2263" ph=" Initializes a new &lt;tt&gt;EntityRepository&lt;/tt&gt;. ..." />
-            <marker date="1531428433000" expanded="true" signature="2355:2481" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="2490:2706" ph=" Creates a new QueryBuilder instance that is prepopulated for this entity name. ..." />
-            <marker date="1531428433000" expanded="true" signature="2772:2919" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="2848:2854" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="2875:2911" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="2928:3137" ph=" Creates a new result set mapping builder for this entity. ..." />
-            <marker date="1531428433000" expanded="true" signature="3197:3413" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="3422:3575" ph=" Creates a new Query instance based on a predefined metadata named query. ..." />
-            <marker date="1531428433000" expanded="true" signature="3626:3720" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="3729:3843" ph=" Creates a native SQL query. ..." />
-            <marker date="1531428433000" expanded="true" signature="3900:4208" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="4217:4329" ph=" Clears the repository, causing all managed entities to become detached. ..." />
-            <marker date="1531428433000" expanded="true" signature="4359:4429" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="4438:4930" ph=" Finds an entity by its primary key / identifier. ..." />
-            <marker date="1531428433000" expanded="true" signature="5001:5096" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="5105:5198" ph=" Finds all entities in the repository. ..." />
-            <marker date="1531428433000" expanded="true" signature="5230:5276" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="5285:5517" ph=" Finds entities by a set of criteria. ..." />
-            <marker date="1531428433000" expanded="true" signature="5617:5794" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="5803:6030" ph=" Finds a single entity by a set of criteria. ..." />
-            <marker date="1531428433000" expanded="true" signature="6102:6284" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="6293:6563" ph=" Counts entities by a set of criteria. ..." />
-            <marker date="1531428433000" expanded="true" signature="6608:6722" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="6731:7028" ph=" Adds support for magic method calls. ..." />
-            <marker date="1531428433000" expanded="true" signature="7078:7709" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="7131:7226" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="7278:7376" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="7426:7520" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="7718:7746" ph=" @return string ..." />
-            <marker date="1531428433000" expanded="true" signature="7787:7834" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="7843:7871" ph=" @return string ..." />
-            <marker date="1531428433000" expanded="true" signature="7908:7959" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="7968:8003" ph=" @return EntityManager ..." />
-            <marker date="1531428433000" expanded="true" signature="8047:8086" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="8095:8138" ph=" @return Mapping\ClassMetadata ..." />
-            <marker date="1531428433000" expanded="true" signature="8182:8224" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="8233:8503" ph=" Select all elements from a selectable that match the expression and ..." />
-            <marker date="1531428433000" expanded="true" signature="8554:8723" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="8732:9167" ph=" Resolves a magic method call to the proper existent method at `EntityRepository`. ..." />
-            <marker date="1531428433000" expanded="true" signature="9239:9720" ph="{...}" />
-            <marker date="1531428433000" expanded="true" signature="9273:9354" ph="..." />
-            <marker date="1531428433000" expanded="true" signature="9513:9619" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,216 +621,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="813">
           <caret line="735" column="20" lean-forward="false" selection-start-line="735" selection-start-column="20" selection-end-line="735" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AuthorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <marker date="1542757606000" expanded="false" signature="8:985" ph="..." />
-            <marker date="1542757606000" expanded="false" signature="1018:1383" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="1388:1777" ph=" Base contract for ORM queries. Base class for Query and NativeQuery. ..." />
-            <marker date="1542757606000" expanded="true" signature="1808:31680" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="1854:1923" ph=" Hydrates an object graph. This is the default behavior. ..." />
-            <marker date="1542757606000" expanded="true" signature="1964:2002" ph=" Hydrates an array graph. ..." />
-            <marker date="1542757606000" expanded="true" signature="2042:2115" ph=" Hydrates a flat, rectangular result set with scalar values. ..." />
-            <marker date="1542757606000" expanded="true" signature="2156:2201" ph=" Hydrates a single scalar value. ..." />
-            <marker date="1542757606000" expanded="true" signature="2249:2319" ph=" Very simple object hydrator (optimized for performance). ..." />
-            <marker date="1542757606000" expanded="true" signature="2366:2476" ph=" The parameter map of this query. ..." />
-            <marker date="1542757606000" expanded="true" signature="2514:2627" ph=" The user-specified ResultSetMapping to use. ..." />
-            <marker date="1542757606000" expanded="true" signature="2672:2773" ph=" The entity manager used by this query object. ..." />
-            <marker date="1542757606000" expanded="true" signature="2804:2866" ph=" The map of query hints. ..." />
-            <marker date="1542757606000" expanded="true" signature="2905:2968" ph=" The hydration mode. ..." />
-            <marker date="1542757606000" expanded="true" signature="3033:3090" ph=" @var \Doctrine\DBAL\Cache\QueryCacheProfile ..." />
-            <marker date="1542757606000" expanded="true" signature="3136:3216" ph=" Whether or not expire the result cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="3270:3327" ph=" @var \Doctrine\DBAL\Cache\QueryCacheProfile ..." />
-            <marker date="1542757606000" expanded="true" signature="3377:3466" ph=" Whether to use second level cache, if available. ..." />
-            <marker date="1542757606000" expanded="true" signature="3511:3537" ph=" @var boolean ..." />
-            <marker date="1542757606000" expanded="true" signature="3581:3657" ph=" Second level cache region name. ..." />
-            <marker date="1542757606000" expanded="true" signature="3696:3772" ph=" Second level query cache mode. ..." />
-            <marker date="1542757606000" expanded="true" signature="3809:3872" ph=" @var \Doctrine\ORM\Cache\Logging\CacheLogger|null ..." />
-            <marker date="1542757606000" expanded="true" signature="3911:3937" ph=" @var integer ..." />
-            <marker date="1542757606000" expanded="true" signature="3977:4127" ph=" Initializes a new instance of a class derived from &lt;tt&gt;AbstractQuery&lt;/tt&gt;. ..." />
-            <marker date="1542757606000" expanded="true" signature="4189:4647" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="4485:4640" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="4656:4826" ph=" Enable/disable second level query (result) caching for this query. ..." />
-            <marker date="1542757606000" expanded="true" signature="4873:4957" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="4966:5073" ph=" @return boolean TRUE if the query results are enable for second level cache, FALSE otherwise. ..." />
-            <marker date="1542757606000" expanded="true" signature="5109:5154" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="5163:5253" ph=" @param string $cacheRegion ..." />
-            <marker date="1542757606000" expanded="true" signature="5304:5391" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="5400:5594" ph=" Obtain the name of the second level query cache region in which query results will be stored ..." />
-            <marker date="1542757606000" expanded="true" signature="5633:5680" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="5689:5795" ph=" @return boolean TRUE if the query cache and second level cache are enabled, FALSE otherwise. ..." />
-            <marker date="1542757606000" expanded="true" signature="5837:5901" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="5910:5939" ph=" @return integer ..." />
-            <marker date="1542757606000" expanded="true" signature="5975:6019" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="6028:6210" ph=" Sets the life-time for this query into second level cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="6255:6337" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="6346:6375" ph=" @return integer ..." />
-            <marker date="1542757606000" expanded="true" signature="6412:6457" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="6466:6576" ph=" @param integer $cacheMode ..." />
-            <marker date="1542757606000" expanded="true" signature="6623:6707" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="6716:6964" ph=" Gets the SQL query that corresponds to this query object. ..." />
-            <marker date="1542757606000" expanded="true" signature="7014:7140" ph=" Retrieves the associated EntityManager of this Query instance. ..." />
-            <marker date="1542757606000" expanded="true" signature="7181:7220" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="7229:7381" ph=" Frees the resources used by the query object. ..." />
-            <marker date="1542757606000" expanded="true" signature="7410:7554" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="7563:7701" ph=" Get all defined parameters. ..." />
-            <marker date="1542757606000" expanded="true" signature="7739:7785" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="7794:8014" ph=" Gets a query parameter. ..." />
-            <marker date="1542757606000" expanded="true" signature="8055:8457" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="8118:8361" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="8188:8351" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="8466:8652" ph=" Sets a collection of query parameters. ..." />
-            <marker date="1542757606000" expanded="true" signature="8701:9111" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="8782:9039" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="8895:8980" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="9120:9594" ph=" Sets a query parameter. ..." />
-            <marker date="1542757606000" expanded="true" signature="9657:9955" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="9763:9856" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="9964:10151" ph=" Processes an individual parameter value. ..." />
-            <marker date="1542757606000" expanded="true" signature="10203:11388" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="10242:10278" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10324:10373" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10407:10675" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10461:10637" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10732:10774" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10811:10847" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10863:11091" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="10983:11081" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="11144:11357" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="11397:11584" ph=" Sets the ResultSetMapping that should be used for hydration. ..." />
-            <marker date="1542757606000" expanded="true" signature="11655:11773" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="11782:11900" ph=" Gets the ResultSetMapping used for hydration. ..." />
-            <marker date="1542757606000" expanded="true" signature="11947:12000" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="12009:12161" ph=" Allows to translate entity namespaces to full qualified names. ..." />
-            <marker date="1542757606000" expanded="true" signature="12233:12510" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="12280:12357" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="12519:13417" ph=" Set a cache profile for hydration caching. ..." />
-            <marker date="1542757606000" expanded="true" signature="13499:13831" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="13576:13750" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="13840:13900" ph=" @return \Doctrine\DBAL\Cache\QueryCacheProfile ..." />
-            <marker date="1542757606000" expanded="true" signature="13949:14007" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="14016:14334" ph=" Set a cache profile for the result cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="14413:14738" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="14490:14661" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="14747:15022" ph=" Defines a cache driver to be used for caching result sets and implicitly enables caching. ..." />
-            <marker date="1542757606000" expanded="true" signature="15092:15517" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="15207:15276" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="15526:15684" ph=" Returns the cache driver used for caching result sets. ..." />
-            <marker date="1542757606000" expanded="true" signature="15729:15985" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="15829:15908" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="15994:16287" ph=" Set whether or not to cache the results of this query and if so, for ..." />
-            <marker date="1542757606000" expanded="true" signature="16372:16615" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="16399:16542" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="16624:16825" ph=" Defines how long the result cache will be active before expire. ..." />
-            <marker date="1542757606000" expanded="true" signature="16881:17215" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="17224:17336" ph=" Retrieves the lifetime of resultset cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="17383:17484" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="17493:17691" ph=" Defines if the result cache is active or not. ..." />
-            <marker date="1542757606000" expanded="true" signature="17747:17827" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="17836:17930" ph=" Retrieves if the resultset cache is active or not. ..." />
-            <marker date="1542757606000" expanded="true" signature="17975:18029" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="18038:18077" ph=" @return QueryCacheProfile ..." />
-            <marker date="1542757606000" expanded="true" signature="18122:18176" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="18185:18506" ph=" Change the default fetch mode of an association for this query. ..." />
-            <marker date="1542757606000" expanded="true" signature="18573:18813" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="18644:18713" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="18822:19158" ph=" Defines the processing mode to be used during hydration / result set transformation. ..." />
-            <marker date="1542757606000" expanded="true" signature="19213:19296" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="19305:19404" ph=" Gets the hydration mode currently used by the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="19445:19495" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="19504:19704" ph=" Gets the list of results for the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="19775:19840" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="19849:19985" ph=" Gets the array of results for the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="20024:20094" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="20103:20238" ph=" Gets the scalar results for the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="20278:20349" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="20358:20525" ph=" Get exactly one result or null. ..." />
-            <marker date="1542757606000" expanded="true" signature="20589:21076" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="20609:20678" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="20710:20744" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="20829:20863" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="20901:20938" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="20974:21031" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="21085:21632" ph=" Gets the single result of the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="21693:22101" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="21838:21888" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="21926:21963" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="21999:22056" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="22110:22401" ph=" Gets the single scalar result of the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="22447:22527" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="22536:22786" ph=" Sets a query hint. If the hint name is not recognized, it is silently ignored. ..." />
-            <marker date="1542757606000" expanded="true" signature="22831:22905" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="22914:23166" ph=" Gets the value of a query hint. If the hint name is not recognized, FALSE is returned. ..." />
-            <marker date="1542757606000" expanded="true" signature="23203:23290" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="23299:23466" ph=" Check if the query has a hint ..." />
-            <marker date="1542757606000" expanded="true" signature="23503:23559" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="23568:23673" ph=" Return the key value map of query hints that are currently set. ..." />
-            <marker date="1542757606000" expanded="true" signature="23706:23748" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="23757:24123" ph=" Executes the query and returns an IterableResult that can be used to incrementally ..." />
-            <marker date="1542757606000" expanded="true" signature="24196:24590" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="24241:24303" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="24342:24398" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="24599:24851" ph=" Executes the query. ..." />
-            <marker date="1542757606000" expanded="true" signature="24924:25161" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="24989:25077" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="25170:25370" ph=" Execute query ignoring second level cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="25460:26856" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="25505:25567" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="25606:25662" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="25759:26499" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="26089:26149" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="26181:26224" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="26341:26488" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="26572:26643" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="26865:27093" ph=" Load from second level cache or executes the query and put into cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="27182:28287" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="27627:27816" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="27665:27777" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="28009:28255" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="28133:28245" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="28296:28360" ph=" @return \Doctrine\ORM\Cache\TimestampCacheKey|null ..." />
-            <marker date="1542757606000" expanded="true" signature="28401:28684" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="28507:28541" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="28693:28931" ph=" Get the result cache id to use to store the result set cache entry. ..." />
-            <marker date="1542757606000" expanded="true" signature="28978:29528" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="29068:29180" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="29537:29809" ph=" Set the result cache id to use to store the result set cache entry. ..." />
-            <marker date="1542757606000" expanded="true" signature="29853:30107" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="30116:30259" ph=" Get the result cache id to use to store the result set cache entry if set. ..." />
-            <marker date="1542757606000" expanded="true" signature="30300:30404" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="30413:30601" ph=" Executes the query and returns a the resulting Statement object. ..." />
-            <marker date="1542757606000" expanded="true" signature="30658:30743" ph=" Cleanup Query resource when clone is called. ..." />
-            <marker date="1542757606000" expanded="true" signature="30775:30947" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="30956:31077" ph=" Generates a string of currently query to use for the cache second level cache. ..." />
-            <marker date="1542757606000" expanded="true" signature="31112:31678" ph="{...}" />
-            <marker date="1542757606000" expanded="true" signature="31219:31563" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="31251:31530" ph="..." />
-            <marker date="1542757606000" expanded="true" signature="31418:31462" ph="..." />
+            <marker date="1563354661000" expanded="true" signature="39:185" ph="..." />
+            <marker date="1563354661000" expanded="true" signature="237:646" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="245:302" ph=" @Route(&quot;/authors/bio/{word}&quot;, name=&quot;authors_bio&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="383:643" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/BookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="488">
+          <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
           <folding>
-            <marker date="1563285127000" expanded="true" signature="38:281" ph="..." />
-            <marker date="1563285127000" expanded="true" signature="330:1568" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="340:576" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="639:799" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="805:851" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="914:1125" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="1132:1180" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="1247:1334" ph="{...}" />
-            <marker date="1563285127000" expanded="true" signature="1341:1391" ph=" @Route(&quot;/authors/bio&quot;, name=&quot;authors_bio&quot;) ..." />
-            <marker date="1563285127000" expanded="true" signature="1468:1565" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="38:182" ph="..." />
+            <marker date="1563354661000" expanded="true" signature="231:1524" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="241:477" ph=" @Route(&quot;/book/list&quot;, name=&quot;book_list&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="540:700" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="706:752" ph=" @Route(&quot;/book/show&quot;, name=&quot;book_show&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="815:1026" ph="{...}" />
+            <marker date="1563354661000" expanded="true" signature="1033:1081" ph=" @Route(&quot;/book/style&quot;, name=&quot;book_style&quot;) ..." />
+            <marker date="1563354661000" expanded="true" signature="1148:1520" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/AuthorRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+        <state relative-caret-position="311">
+          <caret line="23" column="105" lean-forward="false" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
           <folding />
         </state>
       </provider>

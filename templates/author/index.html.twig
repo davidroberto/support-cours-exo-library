@@ -1,0 +1,7 @@
+{#Je créé un formulaire html classique, avec en méthode 'get' et en action l'url vers la route authors_bio.
+Lors de la validation du formulaire, la valeur entrée dans l'input sera envoyée en parametre d'url sur l'url de la route authors_bio
+#}
+<form action="{{ path('authors_bio') }}" method="get">
+    Recherche: <input type="text" name="word">
+    <input type="submit">
+</form>

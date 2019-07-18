@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Book;
+use App\Repository\AuthorRepository;
 use App\Repository\BookRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -60,8 +61,11 @@ class BookController extends AbstractController
 	 * je mets en parametre de la méthode l'entity manager
 	 * car c'est l'outil qui me permet de gérer mes entités
 	 */
-    public function insertBook(EntityManagerInterface $entityManager)
+    public function insertBook(EntityManagerInterface $entityManager, AuthorRepository $authorRepository)
     {
+
+    	// je récupère un auteur en fonction de son id
+	    $author = $authorRepository->find(1);
 
     	// je créé une nouvelle instance de l'entité Book
 	    // c'est cette entité qui est le miroir de la table Book
@@ -69,11 +73,15 @@ class BookController extends AbstractController
 
     	// je set toutes les infos de mon livres grâce aux setters
 	    // créés dans l'entité
-    	$book->setTitle('titre test');
+    	$book->setTitle('titre btgfdsq');
     	$book->setNbPages(1234);
     	$book->setSummary('resumé de mon livre test');
     	$book->setStyle('Thriller');
 
+
+    	// j'utilise le setter d'auteur (dans l'entité Book) pour relier un auteur
+	    // à mon livre
+    	$book->setAuthor($author);
 
     	// j'enregistre mon livre en base de données
 	    // avec les méthodes persist() et flush()

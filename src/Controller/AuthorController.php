@@ -40,4 +40,20 @@ class AuthorController extends AbstractController
 		);
 	}
 
+	/**
+	 * @Route("/authors/list", name="authors_list")
+	 */
+	public function authorsList(AuthorRepository $authorRepository)
+	{
+		$authors = $authorRepository->findAll();
+
+		return $this->render('author/authorList.html.twig',
+			[
+				'authors' => $authors
+			]
+		);
+
+	}
+
+
 }

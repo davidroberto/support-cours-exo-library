@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -45,6 +46,28 @@ class Author
 	 * @ORM\OneToMany(targetEntity="App\Entity\Book", mappedBy="author")
 	 */
     private $books;
+
+
+	/**
+	 * Un constructeur est une méthode qui sera appelée automatiquement
+	 * à chaque fois qu'une instance de la classe est créée
+	 * ( à chaque fois que je fais new Author() )
+	 */
+	public function __construct()
+	{
+		// je déclare ma propriété books en tant qu'array
+		// car elle peut contenir plusieurs livres
+		// ArrayCollection se comporte comme un array (avec plus
+		// de possibilités)
+		$this->books = new ArrayCollection();
+	}
+
+
+	public function getBooks() {
+		return $this->books;
+	}
+
+
 
 
     public function getId(): ?int

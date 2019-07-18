@@ -1,0 +1,10 @@
+{% for author in authors %}
+
+    {{ author.name }}
+
+    {% for book in author.books %}
+        {{ book.title }}
+    {% endfor %}
+
+    <hr>
+{% endfor %}

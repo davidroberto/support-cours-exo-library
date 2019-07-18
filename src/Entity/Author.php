@@ -41,6 +41,11 @@ class Author
      */
     private $biography;
 
+	/**
+	 * @ORM\OneToMany(targetEntity="App\Entity\Book", mappedBy="author")
+	 */
+    private $books;
+
 
     public function getId(): ?int
     {

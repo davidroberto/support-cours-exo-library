@@ -1,0 +1,10 @@
+{% for book in books %}
+    <p>{{ book.title }}</p>
+    <p>{{ book.style }}</p>
+
+    {% if book.author %}
+        <p>{{ book.author.firstName }}</p>
+    {% endif %}
+
+    <hr>
+{% endfor %}

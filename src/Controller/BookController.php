@@ -24,7 +24,11 @@ class BookController extends AbstractController
 	    // j'utilise la méthode findAll du repository pour récupérer tous mes Book
 	    $books = $bookRepository->findAll();
 
-	    dump($books); die;
+	    return $this->render('book/bookList.html.twig',
+		    [
+		    	'books' => $books
+		    ]
+	    );
     }
 
 	/**

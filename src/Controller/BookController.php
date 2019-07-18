@@ -93,7 +93,7 @@ class BookController extends AbstractController
 	 */
     public function deleteBook($id, BookRepository $bookRepository, EntityManagerInterface $entityManager)
     {
-    	// je récupère le livre dans la BDD qui a l'id qui correspond à la wildcard
+    	// je récupère ;le livre dans la BDD qui a l'id qui correspond à la wildcard
 	    // ps : c'est une entité qui est récupérée
 	    $book = $bookRepository->find($id);
 
@@ -103,6 +103,29 @@ class BookController extends AbstractController
 	    $entityManager->flush();
 
 	    var_dump("livre supprimé"); die;
+    }
+
+
+	/**
+	 * @Route("/book/{id}/update", name="book_update")
+	 *
+	 * Je récupère la valeur de la wildcard {id} dans la variable id
+	 * Je récupère le bookRepository car j'ai besoin d'utiliser la méthode find
+	 * Je récupère l'entityManager car c'est lui qui me permet de gérer les entités (ajout, suppression, modif)
+	 */
+    public function updateBook($id, BookRepository $bookRepository, EntityManagerInterface $entityManager)
+    {
+	    // je récupère ;le livre dans la BDD qui a l'id qui correspond à la wildcard
+	    $book = $bookRepository->find($id);
+
+	    // j'utilise le setter du titre pour modifier le titre du livre
+    	$book->setTitle('titre mis à jour');
+
+    	// je re-enregistre le livre dans la base de données
+    	$entityManager->persist($book);
+    	$entityManager->flush();
+
+	    var_dump("livre mis à jour"); die;
     }
 
 

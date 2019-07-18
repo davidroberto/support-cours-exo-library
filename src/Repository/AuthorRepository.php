@@ -3,7 +3,9 @@
 namespace App\Repository;
 
 use App\Entity\Author;
+use App\Entity\Book;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Query\Expr\Join;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
@@ -30,10 +32,14 @@ class AuthorRepository extends ServiceEntityRepository
 		$qb = $this->createQueryBuilder('a');
 
 		// je sélectionne tous les auteurs de la base de données
-		$query = $qb->select('a')
+		$query = $qb->select('a', 'b')
+
+			->join(Book::class, 'b')
 
 			// si le 'word' est trouvé dans la biographie
 			->where('a.biography LIKE :word')
+
+			->andWhere('b.summary LIKE :word')
 
 			// j'utilise le setParameter pour sécuriser la requete
 			->setParameter('word', '%'.$word.'%')

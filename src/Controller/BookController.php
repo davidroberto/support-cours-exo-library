@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Book;
 use App\Repository\BookRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -49,6 +51,37 @@ class BookController extends AbstractController
     	$books = $bookRepository->findByGenre();
 
     	var_dump($books); die;
+    }
+
+
+	/**
+	 * @Route("/book/insert", name="book_insert")
+	 *
+	 * je mets en parametre de la méthode l'entity manager
+	 * car c'est l'outil qui me permet de gérer mes entités
+	 */
+    public function insertBook(EntityManagerInterface $entityManager)
+    {
+
+    	// je créé une nouvelle instance de l'entité Book
+	    // c'est cette entité qui est le miroir de la table Book
+    	$book = new Book();
+
+    	// je set toutes les infos de mon livres grâce aux setters
+	    // créés dans l'entité
+    	$book->setTitle('titre test');
+    	$book->setNbPages(1234);
+    	$book->setSummary('resumé de mon livre test');
+    	$book->setStyle('Thriller');
+
+
+    	// j'enregistre mon livre en base de données
+	    // avec les méthodes persist() et flush()
+	    $entityManager->persist($book);
+	    $entityManager->flush();
+
+	    var_dump("livre enregistré"); die;
+
     }
 
 

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c211b555-ba48-4757-88c3-e0d4cec22cae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AuthorController.php" afterPath="$PROJECT_DIR$/src/Controller/AuthorController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +35,8 @@
       <file leaf-file-name="AuthorController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AuthorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="87" column="36" lean-forward="true" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+            <state relative-caret-position="423">
+              <caret line="120" column="41" lean-forward="true" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
               <folding>
                 <element signature="e#35#57#0#PHP" expanded="true" />
               </folding>
@@ -178,7 +178,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="52" />
+    <option name="y" value="56" />
     <option name="width" value="1280" />
     <option name="height" value="732" />
   </component>
@@ -526,12 +527,12 @@
       <workItem from="1563349257221" duration="6095000" />
       <workItem from="1563383262721" duration="131000" />
       <workItem from="1563437455856" duration="13920000" />
-      <workItem from="1563522016965" duration="4667000" />
+      <workItem from="1563522016965" duration="5779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39302000" />
+    <option name="totallyTimeSpent" value="40414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,7 +544,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="0" />
+    <frame x="52" y="56" width="1280" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -764,6 +765,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="161" column="27" lean-forward="false" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="27" />
+          <folding>
+            <marker date="1542757606000" expanded="false" signature="8:985" ph="..." />
+            <marker date="1542757606000" expanded="false" signature="1018:1238" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="1243:1774" ph=" An EntityRepository serves as a repository for entities with generic as well as ..." />
+            <marker date="1542757606000" expanded="true" signature="1839:9722" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="1849:1874" ph=" @var string ..." />
+            <marker date="1542757606000" expanded="true" signature="1913:1945" ph=" @var EntityManager ..." />
+            <marker date="1542757606000" expanded="true" signature="1976:2030" ph=" @var \Doctrine\ORM\Mapping\ClassMetadata ..." />
+            <marker date="1542757606000" expanded="true" signature="2064:2263" ph=" Initializes a new &lt;tt&gt;EntityRepository&lt;/tt&gt;. ..." />
+            <marker date="1542757606000" expanded="true" signature="2355:2481" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="2490:2706" ph=" Creates a new QueryBuilder instance that is prepopulated for this entity name. ..." />
+            <marker date="1542757606000" expanded="true" signature="2772:2919" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="2848:2854" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="2875:2911" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="2928:3137" ph=" Creates a new result set mapping builder for this entity. ..." />
+            <marker date="1542757606000" expanded="true" signature="3197:3413" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="3422:3575" ph=" Creates a new Query instance based on a predefined metadata named query. ..." />
+            <marker date="1542757606000" expanded="true" signature="3626:3720" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="3729:3843" ph=" Creates a native SQL query. ..." />
+            <marker date="1542757606000" expanded="true" signature="3900:4208" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="4217:4329" ph=" Clears the repository, causing all managed entities to become detached. ..." />
+            <marker date="1542757606000" expanded="true" signature="4359:4429" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="4438:4930" ph=" Finds an entity by its primary key / identifier. ..." />
+            <marker date="1542757606000" expanded="true" signature="5001:5096" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="5105:5198" ph=" Finds all entities in the repository. ..." />
+            <marker date="1542757606000" expanded="true" signature="5230:5276" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="5285:5517" ph=" Finds entities by a set of criteria. ..." />
+            <marker date="1542757606000" expanded="true" signature="5617:5794" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="5803:6030" ph=" Finds a single entity by a set of criteria. ..." />
+            <marker date="1542757606000" expanded="true" signature="6102:6284" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="6293:6563" ph=" Counts entities by a set of criteria. ..." />
+            <marker date="1542757606000" expanded="true" signature="6608:6722" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="6731:7028" ph=" Adds support for magic method calls. ..." />
+            <marker date="1542757606000" expanded="true" signature="7078:7709" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="7131:7226" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="7278:7376" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="7426:7520" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="7718:7746" ph=" @return string ..." />
+            <marker date="1542757606000" expanded="true" signature="7787:7834" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="7843:7871" ph=" @return string ..." />
+            <marker date="1542757606000" expanded="true" signature="7908:7959" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="7968:8003" ph=" @return EntityManager ..." />
+            <marker date="1542757606000" expanded="true" signature="8047:8086" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="8095:8138" ph=" @return Mapping\ClassMetadata ..." />
+            <marker date="1542757606000" expanded="true" signature="8182:8224" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="8233:8503" ph=" Select all elements from a selectable that match the expression and ..." />
+            <marker date="1542757606000" expanded="true" signature="8554:8723" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="8732:9167" ph=" Resolves a magic method call to the proper existent method at `EntityRepository`. ..." />
+            <marker date="1542757606000" expanded="true" signature="9239:9720" ph="{...}" />
+            <marker date="1542757606000" expanded="true" signature="9273:9354" ph="..." />
+            <marker date="1542757606000" expanded="true" signature="9513:9619" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,8 +1059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AuthorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="87" column="36" lean-forward="true" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+        <state relative-caret-position="423">
+          <caret line="120" column="41" lean-forward="true" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
           <folding>
             <element signature="e#35#57#0#PHP" expanded="true" />
           </folding>

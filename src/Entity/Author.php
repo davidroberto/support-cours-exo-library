@@ -68,8 +68,6 @@ class Author
 	}
 
 
-
-
     public function getId(): ?int
     {
         return $this->id;

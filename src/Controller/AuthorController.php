@@ -3,7 +3,11 @@
 
 namespace App\Controller;
 
+use App\Entity\Author;
+use App\Form\AuthorType;
 use App\Repository\AuthorRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -50,6 +54,44 @@ class AuthorController extends AbstractController
 		return $this->render('author/authorList.html.twig',
 			[
 				'authors' => $authors
+			]
+		);
+
+	}
+
+	/**
+	 * @Route("/authors/form_insert", name="authors_form_insert")
+	 */
+	public function authorFormInsert(Request $request, EntityManagerInterface $entityManager)
+	{
+		// Utilisation du fichier AuthorType pour créer le formulaire
+		// (ne contient pas encore de html)
+
+		$author = new Author();
+
+		$form = $this->createForm(AuthorType::class, $author);
+		// création de la view du formulaire
+		$formAuthorView = $form->createView();
+
+
+		// Si la méthode est POST
+		// si le formulaire est envoyé
+		if ($request->isMethod('Post')) {
+
+			// Le formulaire récupère les infos
+			// de la requête
+			$form->handleRequest($request);
+
+			// On enregistre l'entité créée avec persist
+			// et flush
+			$entityManager->persist($author);
+			$entityManager->flush();
+		}
+
+			return $this->render('author/authorFormInsert.html.twig',
+			[
+				// envoie de la view du form au fichier twig
+				'formAuthorView' => $formAuthorView
 			]
 		);
 

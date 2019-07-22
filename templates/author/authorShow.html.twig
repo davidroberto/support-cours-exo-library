@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+{% block main %}
+
+    <h1 class="title">{{ author.firstname }} {{ author.name }}</h1>
+
+
+    <div>
+
+        <p>Date de naissance : {{ author.birthdate | date("m/d/Y") }}</p>
+
+        {% if author.deathdate %}
+            <p>Date de mort : {{ author.deathdate | date("m/d/Y") }} </p>
+        {% endif %}
+
+        <h2 class="subtitle">Livres :</h2>
+        {% for book in author.books %}
+            <p>{{ book.title }}</p>
+        {% endfor %}
+
+
+    </div>
+
+{% endblock %}

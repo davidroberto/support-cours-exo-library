@@ -16,9 +16,24 @@ use Symfony\Component\Routing\Annotation\Route;
 class AdminAuthorController extends AbstractController
 {
 	/**
-	 * @Route("/admin/authors/form_insert", name="authors_form_insert")
+	 * @Route("/admin/authors", name="admin_author_list")
 	 */
-	public function authorFormInsert(Request $request, EntityManagerInterface $entityManager)
+	public function adminAuthorList(AuthorRepository $authorRepository, EntityManagerInterface $entityManager)
+	{
+		$authors = $authorRepository->findAll();
+
+		return $this->render('author/admin/authorList.html.twig',
+			[
+				// envoie de la view du form au fichier twig
+				'authors' => $authors
+			]
+		);
+	}
+
+	/**
+	 * @Route("/admin/authors/insert", name="admin_author_insert")
+	 */
+	public function adminAuthorFormInsert(Request $request, EntityManagerInterface $entityManager)
 	{
 		// Utilisation du fichier AuthorType pour créer le formulaire
 		// (ne contient pas encore de html)
@@ -48,7 +63,7 @@ class AdminAuthorController extends AbstractController
 			}
 		}
 
-		return $this->render('author/authorFormInsert.html.twig',
+		return $this->render('author/admin/authorInsert.html.twig',
 			[
 				// envoie de la view du form au fichier twig
 				'formAuthorView' => $formAuthorView
@@ -58,9 +73,9 @@ class AdminAuthorController extends AbstractController
 	}
 
 	/**
-	 * @Route("admin/authors/{id}/form_update/", name="authors_form_update")
+	 * @Route("/admin/authors/{id}/update", name="admin_author_update")
 	 */
-	public function authorFormUpdate($id, Request $request, AuthorRepository $authorRepository, EntityManagerInterface $entityManager)
+	public function adminAuthorFormUpdate($id, Request $request, AuthorRepository $authorRepository, EntityManagerInterface $entityManager)
 	{
 		// Utilisation du fichier AuthorType pour créer le formulaire
 		// (ne contient pas encore de html)
@@ -90,12 +105,38 @@ class AdminAuthorController extends AbstractController
 			}
 		}
 
-		return $this->render('author/authorFormInsert.html.twig',
+		return $this->render('author/admin/authorInsert.html.twig',
 			[
 				// envoie de la view du form au fichier twig
 				'formAuthorView' => $formAuthorView
 			]
 		);
 
+	}
+
+	/**
+	 * @Route("admin/authors/{id}/delete", name="admin_author_delete")
+	 *
+	 * Je récupère la valeur de la wildcard {id} dans la variable id
+	 * Je récupère le authorRepository car j'ai besoin d'utiliser la méthode find
+	 * Je récupère l'entityManager car c'est lui qui me permet de gérer les entités (ajout, suppression, modif)
+	 */
+	public function deleteAuthor($id, AuthorRepository $authorRepository, EntityManagerInterface $entityManager)
+	{
+		// je récupère ;le livre dans la BDD qui a l'id qui correspond à la wildcard
+		// ps : c'est une entité qui est récupérée
+		$author = $authorRepository->find($id);
+
+		// j'utilise la méthode remove() de l'entityManager en spécifiant
+		// le livre à supprimer
+		$entityManager->remove($author);
+		$entityManager->flush();
+
+		return $this->render('author/admin/authorDelete.html.twig',
+			[
+				// envoie de la view du form au fichier twig
+				'author' => $author
+			]
+		);
 	}
 }

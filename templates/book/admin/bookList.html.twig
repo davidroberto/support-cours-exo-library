@@ -1,0 +1,23 @@
+{% extends 'Adminbase.html.twig' %}
+
+
+{% block main %}
+
+    <h1 class="title">ADMIN : TOUS LES LIVRES</h1>
+
+    <div class="container">
+        {% for book in books %}
+            <p>{{ book.title }}</p>
+            <a href="{{ path('admin_books_update', {'id' : book.id}) }}">Modifier</a>
+            <a href="{{ path('admin_books_delete', {'id' : book.id}) }}">Supprimer</a>
+            <hr>
+        {% endfor %}
+
+        <div>
+            <a href="{{ path('admin_books_insert') }}">Ajouter un livre</a>
+        </div>
+
+    </div>
+
+
+{% endblock %}

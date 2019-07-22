@@ -1,0 +1,17 @@
+{% extends 'Adminbase.html.twig' %}
+
+
+{% block main %}
+
+    <h1>Vous êtes connecté à la zone admin</h1>
+
+
+    <h2 class="subtitle"></h2>
+    <p class="">
+        <a class="header-link" href="{{ path('admin_author_list') }}">Editer les auteurs</a>
+    </p>
+    <p class="">
+        <a class="header-link" href="{{ path('admin_books_list') }}">Editer les Livres</a>
+    </p>
+
+{% endblock %}

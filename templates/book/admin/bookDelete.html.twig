@@ -1,0 +1,10 @@
+{% extends 'Adminbase.html.twig' %}
+
+
+{% block main %}
+
+    <h1 class="title">ADMIN : Le livre "{{ book.title}}" a été supprimé</h1>
+
+    <a href="{{ path('admin_books_list') }}">Revenir à la liste de livres</a>
+
+{% endblock %}

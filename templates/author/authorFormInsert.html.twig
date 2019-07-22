@@ -1,2 +1,26 @@
-{#affichage du formulaire#}
-{{ form(formAuthorView) }}
+{% extends 'base.html.twig' %}
+
+
+{% block main %}
+
+
+    {{ form_start(formAuthorView) }}
+
+        {{ form_label(formAuthorView.name) }}
+
+        <div class="toto">
+            {{ form_widget(formAuthorView.name, {'attr': {'class': 'inputToto'}}) }}) }}
+        </div>
+        {{ form_widget(formAuthorView.firstname) }}
+
+        {{ form_widget(formAuthorView.birthdate) }}
+
+        {{ form_widget(formAuthorView.deathdate) }}
+
+        {{ form_widget(formAuthorView.biography) }}
+
+        {{ form_widget(formAuthorView.enregistrer) }}
+
+    {{ form_end(formAuthorView) }}
+
+{% endblock %}

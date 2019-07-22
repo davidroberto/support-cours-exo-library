@@ -43,7 +43,7 @@ class Author
     private $biography;
 
 	/**
-	 * @ORM\OneToMany(targetEntity="App\Entity\Book", mappedBy="author")
+	 * @ORM\OneToMany(targetEntity="App\Entity\Book", mappedBy="author", cascade={"remove"})
 	 */
     private $books;
 

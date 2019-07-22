@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+
+{% block main %}
+
+    <h1 class="title">{{ book.title }}</h1>
+
+    <div>
+        <p>Nombre de pages : {{ book.nbPages }}</p>
+        {% if book.author is defined %}
+            {{ book.author.name }}
+        {% endif %}
+        <p>Nombre de pages : {{ book.style }}</p>
+        <p>Nombre de pages : {{ book.summary }}</p>
+    </div>
+
+{% endblock %}

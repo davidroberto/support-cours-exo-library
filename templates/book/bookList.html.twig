@@ -1,10 +1,20 @@
-{% for book in books %}
-    <p>{{ book.title }}</p>
-    <p>{{ book.style }}</p>
+{% extends 'base.html.twig' %}
 
-    {% if book.author %}
-        <p>{{ book.author.firstName }}</p>
-    {% endif %}
 
-    <hr>
-{% endfor %}
+{% block main %}
+
+    <h1 class="title">Tous les livres :</h1>
+
+    {% for book in books %}
+        <p>{{ book.title }}</p>
+        <p>{{ book.style }}</p>
+
+        {% if book.author %}
+            <p>{{ book.author.firstName }}</p>
+        {% endif %}
+
+        <a href="{{ path('book_show', {'id': book.id}) }}">Voir le livre</a>
+        <hr>
+    {% endfor %}
+
+{% endblock %}

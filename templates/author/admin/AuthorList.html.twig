@@ -1,0 +1,22 @@
+{% extends 'Adminbase.html.twig' %}
+
+
+{% block main %}
+
+    <h1 class="title">ADMIN : TOUS LES Auteurs</h1>
+
+    <div class="container">
+
+        {% for author in authors %}
+            <p>{{ author.name }}</p>
+            <a href="{{ path('admin_author_update', {'id' : author.id}) }}">Modifier</a>
+            <a href="{{ path('admin_author_delete', {'id' : author.id}) }}">Supprimer</a>
+            <hr>
+        {% endfor %}
+
+        <div>
+            <a href="{{ path('admin_author_insert') }}">Ajouter un auteur</a>
+        </div>
+    </div>
+
+{% endblock %}

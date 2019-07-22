@@ -17,14 +17,6 @@ class AuthorController extends AbstractController
 {
 
 	/**
-	 * @Route("/authors", name="authors")
-	 */
-	public function authorsIndex()
-	{
-		return $this->render('author/index.html.twig');
-	}
-
-	/**
 	 * @Route("/authors/bio", name="authors_bio")
 	 */
 	public function authorsByBiography(AuthorRepository $authorRepository, Request $request)
@@ -57,6 +49,31 @@ class AuthorController extends AbstractController
 			]
 		);
 
+	}
+
+
+	/**
+	 * @Route("/authors/show/{id}", name="authors_show")
+	 */
+	public function authorsShow($id, AuthorRepository $authorRepository)
+	{
+		$author = $authorRepository->find($id);
+
+		return $this->render('author/authorShow.html.twig',
+			[
+				'author' => $author
+			]
+		);
+
+	}
+
+
+	/**
+	 * @Route("/authors/search", name="authors_search")
+	 */
+	public function authorsIndex()
+	{
+		return $this->render('author/index.html.twig');
 	}
 
 
